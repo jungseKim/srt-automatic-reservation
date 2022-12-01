@@ -1,18 +1,15 @@
 # Python program for booking SRT ticket.
-## Notification,Automatic,payment
+## Notification,Automatic,payment(예정)
 
 매진된 SRT 표의 예매를 도와주는 파이썬 프로그램입니다.  
 원하는 표가 나올 때 까지 새로고침하여 예약을 시도합니다.
 
-extends--> 2022.11.30 예약 완료시 자동 결제, 인원수 옵션, 알림기능을 추가하였습니다. 
+extends--> 2022.11.30 예약 인원수 옵션,예약완료시 텔레그램을 이용한 알림기능을 추가하였습니다.
+
 
 
 ## 다운
-```cmd
-git clone https://github.com/kminito/srt_reservation.git
-```
   
-
 ```py
 pip install -r requirements.txt
 ```
@@ -54,6 +51,9 @@ python quickstart.py --user 1234567890 --psw 000000 --dpt 동탄 --arr 동대구
 
 ## 알림 추가
 텔레그램을 사용하여 예약 완료시 어플로 메세지 전송
+
+## 보완점
+결제 완료창에서 키보드 보안으로 selenium의 key_send가 되질않음 
 
 ## 기타  
 명절 승차권 예약에는 사용이 불가합니다.  
